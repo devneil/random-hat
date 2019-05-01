@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RandomHat"
+             x:Class="RandomHat.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Random Hat Selector!" 
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               FontSize="Medium"/>
+        <Grid x:Name="selectors">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="col1" Width="*" />
+                <ColumnDefinition x:Name="col2" Width="*" />
+            </Grid.ColumnDefinitions>
+        </Grid>
+        <Button Text="Go"
+                Clicked="Button_Clicked" />
+        <Label x:Name="result" 
+               Text="..."
+               HorizontalOptions="Center"
+               FontSize="Large"/>
+    </StackLayout>
+
+</ContentPage>
